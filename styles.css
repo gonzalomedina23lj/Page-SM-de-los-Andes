@@ -113,7 +113,6 @@ header{
 
 .contenedor-servicio img{
     width: 40%;
-
 }
 
 .checklist-servicio{
@@ -299,7 +298,7 @@ footer{
     margin-bottom: 60px;
 }
 
-@media screen and (min-width: 800px){
+@media screen and (max-width: 800px){
     .menu-navegacion{
         width: 50vw;
     }
