@@ -396,6 +396,10 @@ footer{
         width: 80%;
     }
 
+    .close{
+        color: #fff;
+    }
+
     .cont-informate{
         width: 80%;
     }
@@ -450,7 +454,13 @@ footer{
         "img4 img7 img7"
         "img8 img8 img8";
     }
-
+    
+    .close{
+        background:#fff;
+        border-radius: 50%;
+        top: 50px;
+    }
+    
     .titulo{
         font-size: 28px;
     }
