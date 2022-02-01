@@ -339,13 +339,12 @@ footer{
     height: 1px;
     background: #2e2b2a;
     margin-bottom: 60px;
+
 }
 @media screen and (max-width: 1280px){
     .menuright{
-        right: 10px;
-        
+        right: 10px;       
     }
-
 
 @media screen and (max-width: 800px){
     .menuright{
@@ -354,22 +353,28 @@ footer{
         width: 30px;
         height: 30px;
     }
+
     .menu-navegacion{
         width: 50vw;
     }
+
     .titulo{
         font-size: 40px;
     }
+
     .contenedor-servicio img{
         width: 80%;
         margin-bottom: 40px;
     }
+
     .checklist-servicio{
         width: 80%;
     }
+
     .service{
         margin-bottom: 30px;
     }
+
     .container-grid{
         margin-left: 30px;
         display: grid;
@@ -386,12 +391,15 @@ footer{
         "img4 img7 img7"
         "img8 img8 img8";       
     }
+
     .img-show{
         width: 80%;
     }
+
     .cont-informate{
         width: 80%;
     }
+
     .footer-content{
         justify-content: center;
     }
@@ -400,13 +408,15 @@ footer{
         width: 80%;
         justify-content: space-evenly;
     }
+
     .social-media-icon{
         margin-left: 0;
     }
+
     .social-media i{
         margin-left: 0;
-
     }
+
     .contact-us{
         text-align: center;
         width: 80%;
@@ -418,10 +428,12 @@ footer{
     .menu-navegacion{
         width: 65vw;
     }
+
     .menuright{
         top: 20px;
         right: 20px;
     }
+
     .container-grid{
         margin-left: 30px;
         display: grid;
@@ -438,23 +450,30 @@ footer{
         "img4 img7 img7"
         "img8 img8 img8";
     }
+
     .titulo{
         font-size: 28px;
     }
+
     .sub{
         font-size: 22px;
     }
+
     .subtitulo{
         font-size: 28px;
     }
+
     .img-galeria{
         width: 95%;
     }
+
     .social-media{
         width: 100%;
         justify-content: space-evenly;
     }
+
     .contact-us{
         width: 90%;
     }
+}
 }
