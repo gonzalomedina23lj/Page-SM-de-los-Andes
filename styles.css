@@ -24,7 +24,7 @@ body{
 
 header{
     height: 100vh;
-    background-image: linear-gradient(to right, rgba(255, 236, 210, 0.548) 0%, rgba(252, 182, 159, 0.527) 100%), url("images/header2.jpg");
+    background-image: linear-gradient(to right, rgba(255, 236, 210, 0.548) 0%, rgba(252, 182, 159, 0.527) 100%), url("images/header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -267,6 +267,7 @@ header{
     border-radius: 50%;
     display: block;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .text-informate{
@@ -274,6 +275,10 @@ header{
     margin-top: 10px;
     width: 100%;
     font-weight: 400;
+}
+
+.rincones{
+    transition: translateX(-100)
 }
 
 /* Footer */

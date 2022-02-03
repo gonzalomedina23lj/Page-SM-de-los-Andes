@@ -1,4 +1,4 @@
-const images = document.querySelectorAll('.img')
+let images = document.querySelectorAll('.img')
 const containerImage = document.querySelector('.container-img')
 const imageContainer = document.querySelector('.img-show')
 const closeX = document.querySelector('.close')
@@ -6,6 +6,7 @@ const closeX = document.querySelector('.close')
 images.forEach(image =>{
     image.addEventListener('click', ()=>{
         addImage(image.getAttribute('src'));
+        images.classList.toggle('img:hover')
         
     })
 })
