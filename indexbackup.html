@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <title>San Martín de los Andes</title>
-    <link rel='stylesheet' href='stylesbackup.css'>
+    <link rel='stylesheet' href='styles.css'>
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,44 +14,29 @@
 <body>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <header class="header" id= "inicio">
-    
+        <img src="icons/bx-menu-alt-right.svg" alt="" class="menuright">
         <div class="contenedor head">
             <h1 class="titulo">Viví San Martín de los Andes</h1>
             <p class="sub">Construí tus sueños y hacelos realidad</p>
+        </div>
+             
+        <div class="weather-container">
+            <div class="widget-tittle"><p>Clima</p></div>
+            <div class="info-container">
+                <div class="weather-icon" id="iconweather">
+                    <img src="icons/sunnny.png" alt="">
+                </div>
+                <div class="temperature">
+                    <p>- °</p><span>C</span>
+                </div>
+                <div class="humwind">
+                    <span class="windspeed" id="wind"><img src="icons/bx-wind.svg" alt=""></span>
+                    <span class="humvalue" id="humidity"><img src="icons/bxs-droplet.svg" alt=""></span>
+                </div>
 
+            </div>
         </div>
         
-        <div>
-            <div class="headercontent">
-                <img src="icons/bx-menu-alt-right.svg" alt="" class="menuright">
-                <div class="weather">
-                    <div class="widgetheader">
-                        <div class="date" id="date">2 May<span class="time">12:30</span>
-                        </div>
-                    </div>
-                    <div class="widgetdata">
-                        <div class="iconweather"><i></i>
-                        </div>
-                    
-                        <div class="wind">
-                            <img class="windicon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAS9JREFUSEu1lY1RwkAUhD8qwBKgArQCsQKhA0uQCsAKlAqwBKkAqAA7UDuQCmDWec85bkjuciSZyUz+7u3bfXubHh0fvY7rkwKYAHPgFtgCS+CjSVN1AGNgc6HYtAlIHYA6fQRegIWdYrMDBJ51pCSKixztga8bAK8moV59AjPg2xc2ARCLkIGK74GbqItf4M5BQgDvLkX9wQbuEkqyJ1v0DtwDa0AGOXNRCkCF3oIBq9M+MAwkEasvu9fzpE1TbOL3DvAD6LpVABVcmcOKJMplczBX/TmpZMhVQJJFNn0utWkug7PvmuyDqwFimzp4yr61IVg3g1wAZ3YxBNuQKI6QTmYQh+A/SAkDzyB17lFeGeMlAFU/Ig/BViRSUorByH5AYQi2ApC9J0okyi6uD0+KcD0Zf6k0xwAAAABJRU5ErkJggg=="/>
-                            <span class="windspeed" id="wind"></span> 
-                        </div>
-                    
-                        <div class="humidity">
-                            <img class="humicon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAWtJREFUSEvFle0xBFEQRc9GgAyIABEgAkSACMgEESACRIAIEAEykAF1qvqpWdvzttlS+s9u1Uz3vbc/7kz445j8cX1+ArABXAShI+CpQq4KYPE7YDmKvgM7FZAKwB5wHYWv4vcAEGQfuO8pmQcwZG7xwyh2CTSQrpIewCrwGG0ZFm+EhyBroWhGTA9A6VvALWCbsrgBdqNNKikD2Ao35g2wTfY7C4f+CiwBbpaqpmJMgQVNcoiy7EUjY85KBaAlPAf7yrp7E+sZoUxB62sqeQTtBDjN5pUBNDablUMKQOfkxplr3ldkAB/xdN6NfBeT5v0LwG9atB1e9QD4v9uiM+AYOAccXiVGc7IWaREvcVwVxxz6lZbh4XUV+LAxsl0e21TSIF8yOq0gqeKxTdEC9CKPxwsVUE9qHxkL6kG20Hc9Sns/Yym9VTRRb7FQLwT2+lO/quy6zCwgaxUZMlaNBBb64FQ2qPtORcFCIJ/AgVAZG2+qDgAAAABJRU5ErkJggg=="/>
-                            <span class="humvalue" id="humidity"></span>
-                        </div>
-                    
-                        <div class="temp" id="temp"><span class="tempvalue"></span>
-                        </div>
-                    </div>
-                
-            </div>
-        </div>    
-        
-
-
         <nav class="menu-navegacion">
             <a href="#inicio">Inicio</a>
             <a href="#servicio">Servicio</a>

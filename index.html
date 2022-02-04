@@ -14,32 +14,35 @@
 <body>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <header class="header" id= "inicio">
-        
-        <div class="contenedor head">
+        <img src="icons/bx-menu-alt-right.svg" alt="" class="menuright">
+             
+        <div class="weather-container">
+            <div class="widget-tittle">
+                <p>
+                    <img src="icons/map-regular-24.png" width="16px" height="16px">San Martín de los Andes
+                </p>
+            </div>
+            <div class="info-container">
+                <div class="weather-icon" id="iconweather">
+                    <img src="icons/10d@2x.png" alt="">
+                </div>
+                <div class="temperature">
+                    <p id="temp"></p>
+                </div>
+                <div class="humwind">
+                    <p>
+                        <img src="icons/bx-wind.svg" alt="" align="bottom"><span id="wind"></span>
+                    </p>
+                    <p>
+                        <img src="icons/droplet-regular-24.png" alt=""><span id="humidity"></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="head">
             <h1 class="titulo">Viví San Martín de los Andes</h1>
             <p class="sub">Construí tus sueños y hacelos realidad</p>
-
-        </div>
-        
-        <div class="header-right">
-            <img src="icons/bx-menu-alt-right.svg" alt="" class="menuright">
-            <div class="weather container">
-                <div class="widget-tittle"><p>Clima</p></div>
-                <div class="info-container">
-                    <div class="weather-icon" id="iconweather">
-                        <img src="icons/sunnny.png" alt="">
-                    </div>
-                    <div class="temperature">
-                        <p>- °</p><span>C</span>
-                    </div>
-                    <div class="humwind">
-                        <span class="windspeed" id="wind"><img src="icons/bx-wind.svg" alt=""></span>
-                        <span class="humvalue" id="humidity"><img src="icons/bxs-droplet.svg" alt=""></span>
-                    </div>
-                </div>
-            
-            </div>
-
         </div>
         
         <nav class="menu-navegacion">

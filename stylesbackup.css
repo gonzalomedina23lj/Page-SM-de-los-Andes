@@ -83,65 +83,39 @@ header{
 }
 
 .weather-container{
-    top: 30px;
-    right: 120px;
     background-color: rgba(247, 218, 208, 0.365);
-    width: 180px;
-    height: 120px;
     border-radius: 10px;
     box-shadow:rgba(247, 218, 208, 0.365);
-    text-align: left;
-    font-size: 14px;
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 50px;
+
+}
+
+.widget-tittle{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+}
+
+.widget-tittle p{
+    text-align:center;
+    padding: 15px;
+    font-size: 20px;
     font-weight: 600;
-    
 }
 
-.widgetheader{
-    display: flex;
-    justify-content: space-between;
-    
+.info-container{
+    width: 240px;
+    height: 180px;    
 }
 
-.date{
-    margin-left: 15px;
-    margin-top: 8px;
-    font-size: 16px;
+.weather-icon img{
+    display: block;
+    margin: auto;
 
-}
 
-.time{
-    margin-left: 60px;
-}
-
-.widgetdata{
-
-    justify-content: space-evenly
-
-}
-
-.wind{
-    margin-left: 10px;
-    margin-top: 40px;
-}
-
-.windicon{
-    width: 16px;
-    height: 16px;
-}
-
-.humidity{
-    margin-left: 10px;
-}
-
-.humicon{
-    width: 18px;
-    height: 18px;
-}
-
-.temp{
-    text-align: center;
-    margin-left: 70px;
-    font-size: 24px;
 }
 
 .titulo{
