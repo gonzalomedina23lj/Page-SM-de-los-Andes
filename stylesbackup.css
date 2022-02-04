@@ -24,7 +24,7 @@ body{
 
 header{
     height: 100vh;
-    background-image: linear-gradient(to right, rgba(255, 236, 210, 0.548) 0%, rgba(252, 182, 159, 0.527) 100%), url("images/header2.jpg");
+    background-image: linear-gradient(to right, rgba(255, 236, 210, 0.548) 0%, rgba(252, 182, 159, 0.527) 100%), url("images/header.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -80,6 +80,68 @@ header{
     text-decoration:none;
     font-weight:bold;
 
+}
+
+.weather-container{
+    top: 30px;
+    right: 120px;
+    background-color: rgba(247, 218, 208, 0.365);
+    width: 180px;
+    height: 120px;
+    border-radius: 10px;
+    box-shadow:rgba(247, 218, 208, 0.365);
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    
+}
+
+.widgetheader{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.date{
+    margin-left: 15px;
+    margin-top: 8px;
+    font-size: 16px;
+
+}
+
+.time{
+    margin-left: 60px;
+}
+
+.widgetdata{
+
+    justify-content: space-evenly
+
+}
+
+.wind{
+    margin-left: 10px;
+    margin-top: 40px;
+}
+
+.windicon{
+    width: 16px;
+    height: 16px;
+}
+
+.humidity{
+    margin-left: 10px;
+}
+
+.humicon{
+    width: 18px;
+    height: 18px;
+}
+
+.temp{
+    text-align: center;
+    margin-left: 70px;
+    font-size: 24px;
 }
 
 .titulo{
@@ -141,27 +203,66 @@ header{
     margin-right: 10px;
 }
 
-.gallery{
-    background: #f2f2f2;
-}
-
-.contenedor-galeria{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.img-galeria{
-    object-fit: cover;
-    width: 45%;
-    display: block;
-    margin-bottom: 40px;
-    box-shadow:rgba(252, 182, 159, 0.438);
-    cursor: pointer;
+.container-grid{
+    margin-left: 30px;
+    display: grid;
+    height:100%;
+    gap: 5px;
+    grid-template-columns: repeat(6, 180px);
+    grid-template-rows: repeat(7, 180px);
+    grid-template-areas:
+    "img1 img1 img2 img2 img2 img2"
+    "img1 img1 img2 img2 img2 img2"
+    "img1 img1 img3 img3 img3 img4"
+    "img1 img1 img3 img3 img3 img4"
+    "img6 img6 img5 img7 img7 img7"
+    "img6 img6 img5 img7 img7 img7"
+    "img8 img8 img8 img7 img7 img7";
     
 }
 
-.imagen-light{
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+    
+}
+.img:hover{
+    filter: grayscale(0%);
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all ease .3s;
+    z-index: 1;
+    
+}
+
+.img-1{
+    grid-area: img1;
+}
+.img-2{
+    grid-area: img2;
+}
+.img-3{
+    grid-area: img3;
+}
+.img-4{
+    grid-area: img4;
+}
+.img-5{
+    grid-area: img5;
+}
+.img-6{
+    grid-area: img6;
+}
+.img-7{
+    grid-area: img7;
+}
+.img-8{
+    grid-area: img8;
+}
+
+.container-img{
     position: fixed;
     background: rgba(0,0,0,.6);
     width: 100%;
@@ -171,33 +272,37 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translate(100%);
-    transition: transform .2s ease-in-out;
+    transform: translateX(-100%);
+    transition: transform .2s ease-in;
+    z-index: 2;
 
 }
 
-.show{
-    transform: translate(0);
+.move{
+    transform: translateX(0);
     
 }
 
-.agregar-imagen{
-    object-fit: cover;
-    width: 60%;
-    border-radius: 10px;
-    transform: scale(0);
-    transition: transform .3s .2s;
+.show{
+    transform: translate(1);
+    
 }
 
-.showImage{
-    transform: scale(1);
+.img-show{
+    display: block;
+    object-fit: contain;
+    height: 85%;
+    width: 85%;
+    border-radius: 10px;
+    transform: scale(1.0);
+    transition: transform .3s .4s;
 }
 
 .close{
     position:absolute;
-    top: 15px;
-    right: 15px;
-    width: 40px;
+    top: 25px;
+    right: 180px;
+    width: 50px;
     cursor: pointer;
 }
 
@@ -224,6 +329,7 @@ header{
     border-radius: 50%;
     display: block;
     margin: 0 auto;
+    cursor: pointer;
 }
 
 .text-informate{
@@ -231,6 +337,10 @@ header{
     margin-top: 10px;
     width: 100%;
     font-weight: 400;
+}
+
+.rincones{
+    transition: translateX(-100)
 }
 
 /* Footer */
@@ -296,34 +406,71 @@ footer{
     height: 1px;
     background: #2e2b2a;
     margin-bottom: 60px;
+
 }
+@media screen and (max-width: 1280px){
+    .menuright{
+        right: 10px;       
+    }
 
 @media screen and (max-width: 800px){
+    .menuright{
+        top: 20px;
+        right: 6px;
+        width: 30px;
+        height: 30px;
+    }
+
     .menu-navegacion{
         width: 50vw;
     }
+
     .titulo{
         font-size: 40px;
     }
+
     .contenedor-servicio img{
         width: 80%;
         margin-bottom: 40px;
     }
+
     .checklist-servicio{
         width: 80%;
     }
+
     .service{
         margin-bottom: 30px;
     }
-    .agregar-imagen{
+
+    .container-grid{
+        margin-left: 30px;
+        display: grid;
+        height:100%;
+        gap: 5px;
+        grid-template-columns: repeat(3, 250px);
+        grid-template-rows: repeat(7, 380px);
+        grid-template-areas:
+        "img1 img2 img2"
+        "img1 img3 img3"
+        "img5 img6 img6"
+        "img5 img6 img6"
+        "img4 img7 img7"
+        "img4 img7 img7"
+        "img8 img8 img8";       
+    }
+
+    .img-show{
         width: 80%;
     }
-    .img-galeria{
-        width: 45%;
+
+    .close{
+        color: #fff;
     }
+
     .cont-informate{
         width: 80%;
     }
+
     .footer-content{
         justify-content: center;
     }
@@ -332,13 +479,15 @@ footer{
         width: 80%;
         justify-content: space-evenly;
     }
+
     .social-media-icon{
         margin-left: 0;
     }
+
     .social-media i{
         margin-left: 0;
-
     }
+
     .contact-us{
         text-align: center;
         width: 80%;
@@ -350,27 +499,58 @@ footer{
     .menu-navegacion{
         width: 65vw;
     }
+
     .menuright{
         top: 20px;
         right: 20px;
     }
+
+    .container-grid{
+        margin-left: 30px;
+        display: grid;
+        height:100%;
+        gap: 5px;
+        grid-template-columns: repeat(3, 160px);
+        grid-template-rows: repeat(7, 240px);
+        grid-template-areas:
+        "img1 img2 img2"
+        "img1 img3 img3"
+        "img5 img6 img6"
+        "img5 img6 img6"
+        "img4 img7 img7"
+        "img4 img7 img7"
+        "img8 img8 img8";
+    }
+    
+    .close{
+        background:#fff;
+        border-radius: 50%;
+        top: 50px;
+    }
+    
     .titulo{
         font-size: 28px;
     }
+
     .sub{
         font-size: 22px;
     }
+
     .subtitulo{
         font-size: 28px;
     }
+
     .img-galeria{
         width: 95%;
     }
+
     .social-media{
         width: 100%;
         justify-content: space-evenly;
     }
+
     .contact-us{
         width: 90%;
     }
+}
 }
