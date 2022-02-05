@@ -1,14 +1,4 @@
-/* const iconElement = document.querySelector(".iconweather");
-const tempElement = document.querySelector(".temperature p");
-const windElement = document.querySelector(".windspeed")
-const humElement = document.querySelector(".humvalue")
-
-iconElement.innerHTML =
-tempElement.innerHTML =
-windElement.innerHTML =
-humElement.innerHTML = 
- */
-
+let iconWeather = document.getElementById("iconweather");
 
 
 fetch('https://api.openweathermap.org/data/2.5/weather?id=3836951&appid=6166d72636703fa3f3b3a0c58d96009c&units=metric')
@@ -18,7 +8,9 @@ fetch('https://api.openweathermap.org/data/2.5/weather?id=3836951&appid=6166d726
         $("#humidity").text(data.main.humidity+"%");
         $("#wind").text(data.wind.speed+"km/h");
         
+        const icon = data.weather[0].icon;
+        iconWeather.innerHTML = `<img src='icons/${icon}.png'></img>`
+        $("iconweater").text(data.weather[0].icon);
 
-        
     })
 

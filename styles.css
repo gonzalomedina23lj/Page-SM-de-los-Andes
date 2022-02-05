@@ -84,10 +84,10 @@ header{
     margin-left: 10px;
     background-color: rgba(247, 218, 208, 0.637);
     width: 220px;
-    height: 190px;
+    height: 200px;
     border-radius: 10px;
     font-weight: 600;
-    border: 0.2px solid
+    border: 0.2px solid;
     
 }
 
@@ -98,7 +98,7 @@ header{
 }
 
 .weather-icon{
-    height: 80px;
+    height: 90px;
 
 }
 
@@ -131,6 +131,7 @@ header{
 .humwind p img{
     height: 16px;
     width: 16px;
+    border: 1.2px;
     
 }
 
@@ -409,7 +410,7 @@ footer{
         margin-left: 10px;
         background-color: rgba(247, 218, 208, 0.637);
         width: 120px;
-        height: 115px;
+        height: 120px;
         border-radius: 10px;
         font-weight: 600;
         border: 0.2px solid
@@ -422,12 +423,6 @@ footer{
     
     .weather-icon{
         height: 80px;
-    }
-    
-    .weather-icon img{
-        display: block;
-        cursor: pointer;
-    
     }
     
     .temperature{
@@ -615,5 +610,23 @@ footer{
     .contact-us{
         width: 90%;
     }
+}
+
+@media screen and (max-width: 400px){
+    .menu-navegacion{
+        width: 50vw;
+    }
+
+    .titulo{
+        font-size: 24px;
+        text-align: center;
+        font-weight:bolder;
+    }
+
+    .sub{
+        font-size: 18px;
+        font-weight:bolder;
+    }
+
 }
 }
