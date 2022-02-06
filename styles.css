@@ -105,7 +105,6 @@ header{
 .weather-icon img{
     display: block;
     margin: 0 auto;
-    cursor: pointer;
 
 }
 
@@ -126,12 +125,13 @@ header{
 .humwind p{
     display: flex;
     align-items: center;
+    color: #2e2b2a;
 }
 
 .humwind p img{
     height: 16px;
     width: 16px;
-    border: 1.2px;
+    border: 1.8px;
     
 }
 
