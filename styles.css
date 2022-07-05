@@ -137,12 +137,41 @@ header{
 
 
 .titulo{
+    background-color:#fcb69f9f;
+    border-radius: 16px;
     font-size: 60px;
     margin-bottom: 15px;
+    position: relative;
 
 }
 
+.titulo::after, .titulo::before{
+    content:'';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background-color:#2b2520;
+    top: 0.8em;
+
+}
+
+.titulo::before{
+    left: -120px;
+
+}
+
+.titulo::after{
+    right: -120px;
+
+}
+
+#verb{
+    font-size: 60px;
+}
+
 .sub{
+    background-color:#fcb69f9f;
+    border-radius: 16px;
     font-weight: 300px;
     font-size: 28px;
 }
