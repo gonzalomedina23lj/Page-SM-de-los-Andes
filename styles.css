@@ -479,6 +479,10 @@ footer{
         font-size: 40px;
     }
 
+    #verb{
+        font-size: 40px;
+    }
+
     .contenedor-servicio img{
         width: 80%;
         margin-bottom: 40px;
@@ -619,6 +623,10 @@ footer{
         font-size: 28px;
     }
 
+    #verb{
+        font-size: 28px;
+    }
+
     .sub{
         font-size: 22px;
     }
@@ -650,6 +658,10 @@ footer{
         font-size: 24px;
         text-align: center;
         font-weight:bolder;
+    }
+
+    #verb{
+        font-size: 24px;
     }
 
     .sub{
