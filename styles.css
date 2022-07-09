@@ -152,6 +152,7 @@ header{
     height: 4px;
     background-color:#2b2520;
     top: 0.8em;
+    
 
 }
 
@@ -434,6 +435,13 @@ footer{
         right: 10px;       
     }
 
+    .titulo::after, .titulo::before{
+        content: none;
+        
+    }
+
+
+
 @media screen and (max-width: 800px){
     .weather-container{
         margin-left: 10px;
@@ -476,11 +484,11 @@ footer{
     }
 
     .titulo{
-        font-size: 40px;
+        font-size: 38px;
     }
 
     #verb{
-        font-size: 40px;
+        font-size: 38px;
     }
 
     .contenedor-servicio img{
@@ -620,15 +628,15 @@ footer{
     }
     
     .titulo{
-        font-size: 28px;
+        font-size: 24px;
     }
 
     #verb{
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .sub{
-        font-size: 22px;
+        font-size: 18px;
     }
 
     .subtitulo{
