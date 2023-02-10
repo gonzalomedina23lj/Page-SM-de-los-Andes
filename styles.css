@@ -231,6 +231,8 @@ header{
     margin-right: 10px;
 }
 
+
+
 .container-grid{
     margin-left: 30px;
     display: grid;
@@ -523,7 +525,7 @@ footer{
     }
 
     .container-grid{
-        margin-left: 30px;
+        margin: 0;
         display: grid;
         height:100%;
         gap: 5px;
