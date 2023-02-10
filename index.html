@@ -1,40 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="description" content="Sitio web con información sobre San Martín de los Andes, una ciudad de la Patagonia Argentina.">
     <title>San Martín de los Andes</title>
-    <link rel='stylesheet' href='styles.css'>
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='styles.css'>
 </head>
 <body>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <header class="header" id= "inicio">
-        <img src="icons/bx-menu-alt-right.svg" alt="" class="menuright">
+        <img src="icons/bx-menu.svg" alt="menu-icon" class="menuright">
              
         <div class="weather-container">
             <div class="widget-tittle">
                 <p>
-                    <a style="text-decoration:none; color: #2e2b2a;" href="https://goo.gl/maps/5ucBSV6ZxnTjBbz4A" target="_blank"><img src="icons/map.svg" width="16px" height="16px">San Martín de los Andes</a>
+                    <a style="text-decoration:none; color: #2e2b2a;" href="https://goo.gl/maps/5ucBSV6ZxnTjBbz4A" target="_blank"><img src="icons/map.svg" width="16px" height="16px" alt="gps">San Martín de los Andes</a>
                 </p>
             </div>
             <div class="info-container">
                 <div class="weather-icon" id="iconweather">
-                    <img src="" alt="">
+                    <img src="" width="100px" height="100px">
                 </div>
                 <div class="temperature">
                     <a style="text-decoration:none; color:#2e2b2a;" href="https://openweathermap.org/city/3836951" target="_blank"><p id="temp"></p></a>
                 </div>
                 <div class="humwind">
                     <p>
-                        <img src="icons/wind.svg" alt=""><span id="wind"></span>
+                        <img src="icons/wind.svg" alt="wind-icon"><span id="wind"></span>
                     </p>
                     <p>
-                        <img src="icons/droplet.svg" alt=""><span id="humidity"></span>
+                        <img src="icons/droplet.svg" alt="droplet-alt"><span id="humidity"></span>
                     </p>
                 </div>
             </div>
@@ -59,7 +58,7 @@
         <section class="contenedor" id="servicio">
             <h2 class="subtitulo">Nuestro servicio</h2>
             <div class="contenedor-servicio">
-                <img src="icons/Mountain_Monochromatic.svg" alt="">
+                <img src="icons/Mountain_Monochromatic.svg" alt="mountain-icon">
                 <div class="checklist-servicio">
 
                     <div class="service"> 
@@ -112,8 +111,8 @@
                 <img src="images/img_7.webp" alt="img-7" class="img img-7">
                 <img src="images/img_8.webp" alt="img-8" class="img img-8">
                 <div class="container-img">
-                    <img src="" alt="" class="img-show">
-                    <img src="icons/bx-x.svg" alt="" class="close">
+                    <img src="" alt="img-show" class="img-show">
+                    <img src="icons/bx-x.svg" alt="close-icon" class="close">
                 </div>
 
             </section>
@@ -126,14 +125,14 @@
                 <p>Te mostramos el camino</p>
             </div>
             <div class="social-media">
-                <a href="" class=social-media-icon>
-                    <i class='bx bxl-linkedin-square' ></i>
+                <a href="#contacto" class=media-icon target="_parent">
+                    <img src="icons/bxl-linkedin.svg" alt="linkedin-icon"></img>
                 </a>
-                <a href="" class=social-media-icon>
-                    <i class='bx bxl-facebook'></i>
+                <a href="#contacto" class=media-icon target="_parent">
+                    <img src="icons/bxl-facebook-circle.svg" alt="facebook-icon"></img>
                 </a>
-                <a href="" class=social-media-icon>
-                    <i class='bx bxl-instagram' ></i>
+                <a href="#contacto" class=media-icon target="_parent">
+                    <img src="icons/bxl-instagram.svg" alt="instagram-icon"></img>
                 </a>
             </div>
         </div>

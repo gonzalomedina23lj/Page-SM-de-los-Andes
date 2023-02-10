@@ -9,7 +9,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?id=3836951&appid=6166d726
         $("#wind").text(data.wind.speed+"km/h");
         
         const icon = data.weather[0].icon;
-        iconWeather.innerHTML = `<img src='icons/${icon}.png'></img>`
+        iconWeather.innerHTML = `<img src='icons/${icon}.png' alt="icon"></img>`
         $("iconweater").text(data.weather[0].icon);
         
 
