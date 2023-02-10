@@ -6,6 +6,11 @@
 
 :root{
     scroll-behavior: smooth;
+    --primary-color: #fcb69f86;
+    --secondary-color: #f7dad05d;
+    --primary-font-color: #2b2520;
+    --secondary-font-color: #f8b199;
+    --primary-bg-color: #fcb69fb4;
 }
 
 
@@ -24,11 +29,11 @@ body{
 
 header{
     height: 100vh;
-    background-image: linear-gradient(to right, rgba(255, 236, 210, 0.548) 0%, rgba(252, 182, 159, 0.527) 100%), url("images/header.jpg");
+    background-image: linear-gradient(to right, rgba(255, 236, 210, 0.548) 0%, rgba(252, 182, 159, 0.527) 100%), url("images/header.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    background-position: center;
+    background-position: left;
 }
 
 .head{
@@ -46,16 +51,17 @@ header{
     position: fixed;
     top: 30px;
     right: 30px;
-    background-color: rgba(247, 218, 208, 0.365);
+    background-color: var(--secondary-color);
     width: 40px;
     height: 40px;
     cursor: pointer;
     border-radius: 10px;
-    box-shadow:rgba(247, 218, 208, 0.365);
+    box-shadow: var(--secondary-color);
 }
 
 .menu-navegacion{
     position: fixed;
+    z-index: 9999;
     top: 0;
     right: 0;
     width: 20vw;
@@ -75,14 +81,14 @@ header{
 }
 
 .menu-navegacion a{
-    color:#2b2520;
+    color:var(--primary-font-color);
     text-decoration:none;
     font-weight:bold;
 }
 
 .weather-container{
     margin-left: 10px;
-    background-color: rgba(247, 218, 208, 0.637);
+    background-color: var(--secondary-color);
     width: 220px;
     height: 200px;
     border-radius: 10px;
@@ -125,7 +131,7 @@ header{
 .humwind p{
     display: flex;
     align-items: center;
-    color: #2e2b2a;
+    color: var(--primary-font-color);
 }
 
 .humwind p img{
@@ -179,7 +185,7 @@ header{
 
 .n-service{
     margin-bottom: 7px;
-    color: #2b2520;
+    color: var(--primary-font-color);
 }
 
 .number{
@@ -187,7 +193,7 @@ header{
     background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
     width: 30px;
     height: 30px;
-    color: #2b2520;
+    color: var(--primary-font-color);
     text-align: center;
     border-radius: 50%;
     font-weight: 800;
@@ -300,13 +306,9 @@ header{
 
 .informate{
     display: flex;
-    /* Un elemento debajo de otro */
     justify-content: space-evenly;
-    /* Espacio equitativo entre elementos */
     align-items: center;
-    /* Centrados verticalmente */
     flex-flow: wrap;
-    /* Enviar hacía abajo si no cabe en línea */
 
 }
 
@@ -338,7 +340,7 @@ header{
 /* Footer */
 
 footer{
-    background: rgba(252, 182, 159, 0.274);
+    background: var(--primary-bg-color);
     padding-bottom: 0.1px;
 }
 
@@ -353,7 +355,7 @@ footer{
 
 .contact-us{
     width: 40%;
-    color: #2e2b2a;
+    color: var(--primary-font-color)
 }
 
 .brand{
@@ -376,14 +378,14 @@ footer{
     margin-left: 20px;
     width: 40px;
     height: 40px;
-    border: 2px solid #2e2b2a;
+    border: 2px solid var(--primary-font-color);
     border-radius: 50%;
     text-align: center;
-    color:#2e2b2a;
+    color: var(--primary-font-color)
 }
 
 .social-media-icon:hover{
-    color:#2e2b2a;
+    color: var(--primary-font-color);
 }
 
 .social-media-icon i{
@@ -402,13 +404,23 @@ footer{
 }
 @media screen and (max-width: 1280px){
     .menuright{
-        right: 10px;       
+        right: 2px;
     }
 
-@media screen and (max-width: 800px){
+    .titulo{
+        font-size: 44px;
+    }
+
+@media screen and (max-width: 768px){
+
+    header{
+        background-image: linear-gradient(to right, rgba(255, 236, 210, 0.548) 0%, rgba(252, 182, 159, 0.527) 100%), url("images/header_2.webp");
+    }
+
+
     .weather-container{
         margin-left: 10px;
-        background-color: rgba(247, 218, 208, 0.637);
+        background-color: var(--primary-bg-color);
         width: 120px;
         height: 120px;
         border-radius: 10px;
@@ -435,12 +447,10 @@ footer{
     }
     .menuright{
         top: 20px;
-        right: 6px;
+        right: 8px;
         width: 30px;
         height: 30px;
     }
-
-    
 
     .menu-navegacion{
         width: 50vw;
@@ -528,7 +538,7 @@ footer{
 
     .weather-container{
         margin-left: 10px;
-        background-color: rgba(247, 218, 208, 0.637);
+        background-color: var(--primary-bg-color);
         width: 100px;
         height: 100px;
         border-radius: 10px;
